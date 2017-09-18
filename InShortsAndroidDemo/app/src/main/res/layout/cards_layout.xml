@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardBackgroundColor="@color/white"
+        card_view:cardCornerRadius="10dp"
+        card_view:cardElevation="5dp"
+        card_view:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <TextView android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:id="@+id/txt_title"
+                android:textSize="18sp"
+                android:textStyle="normal"
+                android:textColor="@android:color/holo_red_light"
+                android:padding="8dp"/>
+            <RelativeLayout android:layout_height="wrap_content"
+                android:layout_width="match_parent">
+                <TextView android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="Publisher :"
+                    android:textSize="16sp"
+                    android:textStyle="italic"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:id="@+id/txt_publisher"
+                    android:textColor="@android:color/holo_green_dark"
+                    android:padding="8dp"/>
+                <TextView android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text=""
+                    android:textSize="16sp"
+                    android:textStyle="italic"
+                    android:id="@+id/txt_publisher_name"
+                    android:layout_toRightOf="@+id/txt_publisher"
+                    android:textColor="@android:color/holo_green_dark"
+                    android:padding="8dp"/>
+
+                </RelativeLayout>
+            <RelativeLayout android:layout_height="wrap_content"
+                android:layout_width="match_parent">
+                <TextView android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="Hosted Name :"
+                    android:textSize="16sp"
+                    android:textStyle="italic"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:id="@+id/txt_hosted"
+                    android:textColor="@android:color/holo_green_dark"
+                    android:padding="8dp"/>
+                <TextView android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text=""
+                    android:textSize="16sp"
+                    android:textStyle="italic"
+                    android:id="@+id/txt_hosted_name"
+                    android:layout_toRightOf="@+id/txt_hosted"
+                    android:textColor="@android:color/holo_green_dark"
+                    android:padding="8dp"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout android:layout_height="wrap_content"
+                android:layout_width="match_parent">
+                <TextView android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="Publisher :"
+                    android:textSize="16sp"
+                    android:textStyle="italic"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:id="@+id/txt_date"
+                    android:textColor="@android:color/darker_gray"
+                    android:padding="8dp"/>
+                <TextView android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="Publisher :"
+                    android:textSize="16sp"
+                    android:textStyle="italic"
+                    android:id="@+id/txt_category"
+                    android:layout_toRightOf="@+id/txt_date"
+                    android:textColor="@android:color/black"
+                    android:padding="8dp"/>
+
+               <ImageView android:layout_height="wrap_content"
+                   android:layout_width="wrap_content"
+                   android:id="@+id/imagelike"
+                   android:layout_margin="8dp"
+                   android:layout_centerHorizontal="true"
+                   android:layout_centerVertical="true"
+                   android:background="@drawable/favorite_select"
+                   android:layout_alignParentRight="true"
+                   android:layout_alignParentEnd="true"/>
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>
